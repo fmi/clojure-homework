@@ -27,11 +27,11 @@
 Ако искате да създадете опашка, да добавите в нея `:foo` и `:bar` и след това да извадите първия елемент, това може да стане така:
 
     (def q1 (make-queue))
-    (def q2 (push-to-queue :foo q1))
-    (def q3 (push-to-queue :bar r2))
+    (def q2 (push-to-queue q1 :foo))
+    (def q3 (push-to-queue q2 :bar))
 
     (def first-element (peek-at-queue q3)) ; :foo
-    (def final-queue (pop-at-queue q3))    ; Опашка с един елемент - :bar
+    (def final-queue (pop-from-queue q3))    ; Опашка с един елемент - :bar
 
 Обърнете внимание, че не сме задали типа на опашката. Може да я реализирате както искате - вектор, списък или дори `cons` клетки. Ние ще ползваме единствено интерфейса, който сме задали чрез функциите.
 
