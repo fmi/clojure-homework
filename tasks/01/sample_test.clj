@@ -2,6 +2,9 @@
 
 (load-file "solution.clj")
 
+(defn abs [n]
+  (if (neg? n) (- n) n))
+
 (deftest sample-test
   (testing "half interval method"
     (let [difference 0.001
