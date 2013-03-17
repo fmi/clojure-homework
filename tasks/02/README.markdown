@@ -63,6 +63,8 @@
 
 * [instance?](http://clojuredocs.org/clojure_core/clojure.core/instance_q)
 * [list?](http://clojuredocs.org/clojure_core/clojure.core/list_q) и други подобни от вида _тип?_
+* [flatten](http://clojuredocs.org/clojure_core/clojure.core/flatten)
+* [clojure.set](http://clojure.github.com/clojure/clojure.set-api.html#clojure.set) – трябва да ползвате функциите с пълното им име: `clojure.set/union`
 * Забележете разликата между [fn?](http://clojuredocs.org/clojure_core/clojure.core/fn_q) и [ifn?](http://clojuredocs.org/clojure_core/clojure.core/ifn_q)
 
 Припомняме ви, че може да разгледате [Clojure cheatsheet](http://clojure.org/cheatsheet) ако се почувстате загубени или документацията в [Clojure Docs](http://clojuredocs.org/quickref/Clojure%20Core), която макар и за Clojure 1.3 е релевантна.
