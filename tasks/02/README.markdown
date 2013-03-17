@@ -49,7 +49,9 @@
 Пример:
 
     (def player {:m0 {:vector 1 :map 2 :set 15 :cons 234 :list 7513 :LAZYSEQ 88888 :uumf 99999 }
-                 :m1 {:cons 231} :m2 {:cons 2} :f #(if (= %1 88888) %1 5)})
+                 :m1 {:cons 231}
+				 :m2 {:cons 2}
+				 :f (fn [x y] (if (= x 88888) x 5))})
 
 ### Двойка мързеливци
 
