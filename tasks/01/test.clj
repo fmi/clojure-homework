@@ -1,7 +1,7 @@
 (defn abs [n]
   (if (neg? n) (- n) n))
 
-(deftest sample-test
+(deftest task-01-test
   (letfn [(make-close-enough [tolerance] #(< (abs (- %1 %2)) tolerance))
           (cube [x] (* x x x))]
   (let   [close-01-enough? (make-close-enough 0.01)]
