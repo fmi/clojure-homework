@@ -16,11 +16,10 @@
       "counter: two increments")
 
   (let [add (add-metrics + :add)]
-    (is (= (binding [*registry* (atom {:add {[4] 3}})]
-             (add 4)
-             (calls :add 4))
-           4)
-        "add-metrics: w/ dynamic registry"))
+    (is (= (do (add 1 1)
+               (calls :add 1 1))
+           1)
+        "add-metrics: 1 call"))
 
   (let [events (atom [])
         add-to-events #(swap! events conj %&)
