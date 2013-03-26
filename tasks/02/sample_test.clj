@@ -25,7 +25,7 @@
           p1 {}]
       (is (= [3 0] (game p0 p1)))))
   (testing "lazy couples"
-    (def map-with-infinite-lazy {:l0 (range) :l1 (lazy-seq (cons 1 nil)) :s #{0 1 2 3 4 5} :k 11})
+    (def map-with-infinite-lazy {:l0 (range) :l1 (lazy-seq (cons 1 nil)) :s #{0 1 2 3 4 5}})
     (let [p0 {:l0 (lazy-seq (cons 1 (lazy-seq [2]))) :l1 (lazy-seq (cons 1 (lazy-seq [6]))) :s0 (set (range 15))}]
       (is (= [5 0] (game p0 map-with-infinite-lazy))))))
 
