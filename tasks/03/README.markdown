@@ -69,7 +69,7 @@
     (def my+ (add-events + :add))
 
     (binding [*before* {:add (fn [& args] (printf "About to add %s\n" args))}
-              *after*  {:add (fn [result & args] (printf "The sum of %s is %s\n"))}]
+              *after*  {:add (fn [result & args] (printf "The sum of %s is %s\n" args result))}]
       (my+ 1 2))
     ; About to add (1 2)
     ; The sum of (1 2) is 3
