@@ -1,6 +1,6 @@
 (use 'clojure.test)
 
-(load-file "solution.clj")
+(load-file (get (vec *command-line-args*) 0 "solution.clj"))
 
 (deftest sample-test
   (testing "empty"
