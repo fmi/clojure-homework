@@ -17,6 +17,66 @@
 
 ...където `clj` е изпълнимото име на Clojure на вашата машина. Обърнете внимание, че в текущата директория трябва да има `sample_test.clj` и `solution.clj`.
 
+TODO: implement clj alias
+TODO: това е дървено, изпускаме цял нов свят
+
+## LightTable
+
+NOTE: paredit, keybindings package
+
+1. open-clojure-instarepl
+2. open-console-tab
+3. new-tabset
+4. move-to-next-tabset
+
+-> make changes
+-> clear-console
+
+```clojure
+
+;; -----------------------------------------------------------------------------
+;; Solution
+
+(defn from-digits [digits]
+  (reduce #(+ (* %1 10) %2)
+          0
+          digits))
+
+;; -----------------------------------------------------------------------------
+;; Playground
+
+(form-digits [1 2 3 4])
+
+;; -----------------------------------------------------------------------------
+;; Tests
+
+(do
+  (use 'clojure.test)
+
+  (deftest challenge-01-sample-test
+    (is (= (from-digits [4 2]) 42)))
+
+  (run-tests)
+)
+```
+
+* Ще се наложи да рестартваме, не е перфектно.
+
+## Emacs
+
+TODO: видео
+
+1. cider
+2. cider-jack-in
+
+## Vim
+
+Вимаджии?
+
+## Sublime
+
+??
+
 ## Изпращане на промени
 
 Има грешка в условието и искате да изпратите корекция? Просто отворете pull request! Ако сте логнати в GitHub, може да го направите дори без да дърпате кода локално при вас.
