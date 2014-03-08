@@ -22,4 +22,4 @@
     (fight :scissors :spock) ; [:spock :smashes :scissors]
     (fight :lizard :paper)   ; [:lizard :eats :paper]
 
-Резултатът трябва да е вектор от 3 ключови думи. Примерните тестове са [тук](https://github.com/fmi/clojure-homework/blob/master/challenges/02/sample_test.clj).
+Резултатът трябва да е вектор от 3 ключови думи или nil в случай, че няма победител. Примерните тестове са [тук](https://github.com/fmi/clojure-homework/blob/master/challenges/02/sample_test.clj).
