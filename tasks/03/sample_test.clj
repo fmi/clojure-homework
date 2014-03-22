@@ -17,7 +17,7 @@
   (is (= (move {:dir [0 1]
                 :width  7
                 :height 7
-                :prizes #{[3 7]}
+                :prizes #{[3 1]}
                 :location [[3 3] [3 4] [3 5] [3 6]]})
          false))
 
