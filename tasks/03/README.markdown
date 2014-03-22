@@ -106,7 +106,7 @@
   (turn {:dir [0 1]
          :width 7
          :height 7
-         :prizes #{[3 7]}
+         :prizes #{[2 5]}
          :location [[3 3] [3 4] [3 5] [3 6]]}
     :left)
   ; {:dir [-1 0], ...}
