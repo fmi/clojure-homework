@@ -11,3 +11,4 @@
     (take 7 (chase 8 [1 2 3 4 5]))        ; (3 1 4 2 5 3 1)
 
 Ако n надвишава големината на колекцията, то тя се зацикля.
+Примерните тестове са [тук](https://github.com/fmi/clojure-homework/blob/master/challenges/03/sample_test.clj).
