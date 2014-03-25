@@ -109,7 +109,7 @@
                  :height 10
                  :prizes #{[3 8] [1 8]}
                  :location [[3 3] [3 4] [3 5] [3 6]]}]
-      (is (= (:dir (turn snake :top)) [0 -1])      "turn: top")
-      (is (= (:dir (turn snake :left)) [-1 0])     "turn: left")
-      (is (= (:dir (turn snake :right)) [1 0])     "turn: right")
-      (is (= (:dir (turn snake :bottom)) [0 1])))) "turn: bottom")
+      (is (= (:dir (turn snake :top)) [0 -1])   "turn: top")
+      (is (= (:dir (turn snake :left)) [-1 0])  "turn: left")
+      (is (= (:dir (turn snake :right)) [1 0])  "turn: right")
+      (is (= (:dir (turn snake :bottom)) [0 1]) "turn: bottom"))))
