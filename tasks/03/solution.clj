@@ -1,14 +1,5 @@
 (require '[clojure.set :refer [difference]])
 
-(defn new-snake
-  "Creates a new snake."
-  []
-  {:dir [0 1]
-   :width 10
-   :height 10
-   :prizes #{[3 8] [1 8]}
-   :location [[3 3] [3 4] [3 5] [3 6]]})
-
 (defn add-prize
   "Creates a prize in random point on the field."
   [{:keys [width height location prizes] :as snake}]
@@ -26,7 +17,7 @@
   [{:keys [location dir width height prizes] :as snake}]
   (let [pos (mapv + (last location) dir)]
     (cond
-     (not= -1 (.indexOf (rest location) pos))
+     (some (partial = pos) (rest location))
      false ;; bite
 
      (or (>= (first pos) width)
