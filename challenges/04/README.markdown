@@ -6,3 +6,11 @@
 
     (shorten-ranges "qwerty" [\q \w \e \r \t \y])        ; "q..y"
     (shorten-ranges "->01|0123|4567" (vec "0123456789")) ; "->01|0..3|4..7"
+
+Винаги предпочитаме възможно най-дългтото съкращение:
+
+    (shorten-ranges "aaaabbbb" (vec "aaaa|bbbb|aaaabbbb")) ; a..b
+
+При няколко възможни съкращния с еднаква дължина, предпочитаме първото:
+
+    (shorten-ranges "aabcc" (vec "aab|bcc")) ; a..bcc
