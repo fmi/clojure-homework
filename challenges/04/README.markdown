@@ -26,4 +26,4 @@
 ba..a, от това че обождаме от ляво на дясно и обработваме винаги първото
 най-дълго срещнато съкращение, ще получим:
 
-(shorten-ranges "baaaaaa" (vec "baaPPaaaaaaaaaa")) ; b..aa..a
+    (shorten-ranges "baaaaaa" (vec "baaPPaaaaaaaaaa")) ; b..aa..a
