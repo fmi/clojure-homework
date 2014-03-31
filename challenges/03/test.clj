@@ -1,4 +1,4 @@
-(deftest chall-1enge-03-sample-test
+(deftest challenge-03-test
   (let [lazy-seq-class clojure.lang.LazySeq
         coll-1 [1 2 3 4 5]
         coll-2 [2]
