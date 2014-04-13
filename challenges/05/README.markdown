@@ -13,7 +13,7 @@
   (realized? coll) ; false
   (first coll)     ; Output: 1
   (second coll)    ; Output: 2
-  (fnext coll)     ; Output: 3
+  (nth coll 2)     ; Output: 3
   coll             ; (nil nil nil)
 )
 ```
