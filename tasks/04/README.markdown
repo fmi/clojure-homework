@@ -125,8 +125,8 @@
 (match [1 (inc 1) 3]
   [4 _ :int]               false
   [1 (+ 2 0) (:or 4 3 19)] true
-  [:a :b :c]               false
-  [:c (prn 10) []]         false)
+  ["a" "b" "c"]            false
+  ["c" (prn 10) []]        false)
 ```
 
 ## Бонус
