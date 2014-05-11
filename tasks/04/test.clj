@@ -49,19 +49,18 @@
   (is (match 1 (:or 2 1 3) true) ":or true")
   (is (not (match 1 (:or 2 3) true)) ":or false")
 
-  (let [state (atom 0)]
-    (match 1
-      2 (swap! state inc)
-      1 true)
-    (is (= @state 0) "only matched body is evaluated"))
+  (def state (atom 0))
+  (match 1
+    2 (swap! state inc)
+    1 true)
+  (is (= @state 0) "only matched body is evaluated")
 
-
-  (let [state (atom 0)]
-    (match 101
-      (swap! state inc) 0
-      101               1
-      (swap! state inc) 2)
-    (is (= @state 1) "lazy eval patterns"))
+  (def state (atom 0))
+  (match 101
+    (swap! state inc) 0
+    101               1
+    (swap! state inc) 2)
+  (is (= @state 1) "lazy eval patterns")
 
   (is (match 1
         [1 2] false
